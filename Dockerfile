@@ -19,5 +19,5 @@ COPY ./server/package-lock.json ./
 COPY ./server/index.js ./
 RUN npm ci --only=production
 
-ENV PORT=8083
+ENV PORT=8080
 ENTRYPOINT [ "node", "index.js" ]
